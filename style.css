@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #1c2a1c;
+ background-color: #1c2a1c;
   color: #e6f0e6;
   font-family: 'Mulish', sans-serif;
 }
@@ -26,10 +26,6 @@ body {
   color: #99ffcc;
 }
 
-.tech {
-  color: #88e0b0;
-  font-weight: bold;
-}
 
 .paragraph {
   font-size: 1.1rem;
@@ -38,28 +34,53 @@ body {
   max-width: 800px;
 }
 
-.footer {
-  margin-top: auto;
-  text-align: center;
-  font-size: 0.9rem;
-  padding: 2rem 0;
+.projet {
+  display:grid;
+  gap:20px;
+  grid-template-columns:repeat(3, 3fr);
+  border: solid white;
+  padding: 10px;
+  border-radius: 15px;
+}
+.projet h1 {
+   text-align: center;
+}
+.projet1 {
+  grid-column:1/2;
+  grid-row:1/2;
+  border: solid white;
+  padding: 10px;
+  margin-bottom: 4px;
+  width:280px;
+}
+.projet2 {
+  border: solid white;
+  padding: 10px;
+  width: 280px
+}
+.projet3 {
+  border: solid white;
+  padding: 10px;
+  width: 280px
 }
 
-.icons {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  margin-bottom: 1rem;
+.projet1 a, .projet2 a, .projet3 a{
+  color:white;
 }
 
-.icons a {
-  color: #e6f0e6;
-  font-size: 1.8rem;
-  transition: transform 0.3s;
+ button{
+   margin-top: 10px;
+   background-color: blue;
+   border-radius: 8px;
 }
 
-.icons a:hover {
-  transform: scale(1.2);
-  color: #99ffcc;
+.cv button a{
+   color:blue;
+   font-size:bold;
 }
+.footer a{
+  color: white;
+}
+
+
 
